@@ -536,7 +536,7 @@ class GlobalSampler:
         return {
             "required": {
                 "sampler_name": (comfy.samplers.KSampler.SAMPLERS, ),
-                "scheduler": (common.SCHEDULERS, ),
+                "scheduler": (common.get_schedulers(), ),
             }
         }
 
